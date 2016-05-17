@@ -1,6 +1,7 @@
 //
 //  AppDelegate.swift
 //  ThreeDTouch
+//
 
 
 import UIKit
@@ -56,10 +57,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 completionHandler(true)
                 
             })
-            
-            
-            
-            
             
             
         }
