@@ -1,10 +1,7 @@
 //
 //  AppDelegate.swift
 //  ThreeDTouch
-//
-//  Created by Training on 28/10/15.
-//  Copyright © 2015 Training. All rights reserved.
-//
+
 
 import UIKit
 
@@ -40,6 +37,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    
+    
+    // 3D Touch
+    
+    func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
+        
+        // verify which item is being used
+        if shortcutItem.type == "com.ArshinEDX.addItems" {
+            
+            let sb          = UIStoryboard(name: "Main", bundle: nil)
+            let addItemsVC  = sb.instantiateViewControllerWithIdentifier("addItemsVC") as! AddStuffViewController
+            
+            let root        = UIApplication.sharedApplication().keyWindow?.rootViewController
+            root?.presentViewController(addItemsVC, animated: false, completion: { () -> Void in
+                
+                completionHandler(true)
+                
+            })
+            
+            
+            
+            
+            
+            
+        }
+    }
+  
 
 
 }

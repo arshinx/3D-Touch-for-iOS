@@ -3,25 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8680F2841BE0E79100971D01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680F2831BE0E79100971D01 /* AppDelegate.swift */; };
-		8680F2861BE0E79100971D01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680F2851BE0E79100971D01 /* ViewController.swift */; };
+		8680F2861BE0E79100971D01 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680F2851BE0E79100971D01 /* MasterViewController.swift */; };
 		8680F2891BE0E79100971D01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8680F2871BE0E79100971D01 /* Main.storyboard */; };
 		8680F28B1BE0E79100971D01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8680F28A1BE0E79100971D01 /* Assets.xcassets */; };
 		8680F28E1BE0E79100971D01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8680F28C1BE0E79100971D01 /* LaunchScreen.storyboard */; };
+		8680F2961BE0F5F100971D01 /* MasterViewController+UIViewControllerPreviewing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680F2951BE0F5F100971D01 /* MasterViewController+UIViewControllerPreviewing.swift */; };
+		8680F2981BE0F6E000971D01 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680F2971BE0F6E000971D01 /* PreviewViewController.swift */; };
+		8680F29A1BE0F97F00971D01 /* AddStuffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680F2991BE0F97F00971D01 /* AddStuffViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8680F2801BE0E79100971D01 /* ThreeDTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeDTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8680F2831BE0E79100971D01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8680F2851BE0E79100971D01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8680F2851BE0E79100971D01 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		8680F2881BE0E79100971D01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8680F28A1BE0E79100971D01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8680F28D1BE0E79100971D01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8680F28F1BE0E79100971D01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8680F2951BE0F5F100971D01 /* MasterViewController+UIViewControllerPreviewing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MasterViewController+UIViewControllerPreviewing.swift"; sourceTree = "<group>"; };
+		8680F2971BE0F6E000971D01 /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		8680F2991BE0F97F00971D01 /* AddStuffViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStuffViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				8680F2831BE0E79100971D01 /* AppDelegate.swift */,
-				8680F2851BE0E79100971D01 /* ViewController.swift */,
+				8680F2851BE0E79100971D01 /* MasterViewController.swift */,
+				8680F2951BE0F5F100971D01 /* MasterViewController+UIViewControllerPreviewing.swift */,
+				8680F2971BE0F6E000971D01 /* PreviewViewController.swift */,
+				8680F2991BE0F97F00971D01 /* AddStuffViewController.swift */,
 				8680F2871BE0E79100971D01 /* Main.storyboard */,
 				8680F28A1BE0E79100971D01 /* Assets.xcassets */,
 				8680F28C1BE0E79100971D01 /* LaunchScreen.storyboard */,
@@ -92,7 +101,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = Training;
+				ORGANIZATIONNAME = ArshinEDX;
 				TargetAttributes = {
 					8680F27F1BE0E79100971D01 = {
 						CreatedOnToolsVersion = 7.1;
@@ -100,7 +109,7 @@
 				};
 			};
 			buildConfigurationList = 8680F27B1BE0E79100971D01 /* Build configuration list for PBXProject "ThreeDTouch" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -135,8 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8680F2861BE0E79100971D01 /* ViewController.swift in Sources */,
+				8680F2861BE0E79100971D01 /* MasterViewController.swift in Sources */,
+				8680F29A1BE0F97F00971D01 /* AddStuffViewController.swift in Sources */,
+				8680F2961BE0F5F100971D01 /* MasterViewController+UIViewControllerPreviewing.swift in Sources */,
 				8680F2841BE0E79100971D01 /* AppDelegate.swift in Sources */,
+				8680F2981BE0F6E000971D01 /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,10 +259,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ThreeDTouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Training.ThreeDTouch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArshinEDX.3DTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -258,10 +274,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ThreeDTouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Training.ThreeDTouch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArshinEDX.3DTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -284,6 +304,7 @@
 				8680F2941BE0E79100971D01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
