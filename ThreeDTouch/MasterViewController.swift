@@ -9,7 +9,8 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     
     @IBOutlet weak var menuTable: UITableView!
-    var data = ["Awesome", "Interesting", "Cool"]
+    var data    = ["Awesome", "Interesting", "Wonderful"]
+    var values  = ["Car", "Book", "Place"]
 
     var stuffType:String!
     var quickActionString:String!
