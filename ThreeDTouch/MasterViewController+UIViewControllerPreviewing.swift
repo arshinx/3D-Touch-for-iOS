@@ -12,10 +12,12 @@ extension MasterViewController: UIViewControllerPreviewingDelegate {
     // PEEK
     func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
         
-        guard let indexPath = menuTable.indexPathForRowAtPoint(location),
-            cell                = menuTable.cellForRowAtIndexPath(indexPath) else { return nil }
+        guard let indexPath  = menuTable.indexPathForRowAtPoint(location),
+                        cell = menuTable.cellForRowAtIndexPath(indexPath)
+            else { return nil }
         
-        guard let previewVC = storyboard?.instantiateViewControllerWithIdentifier("PreviewVC") as? PreviewViewController else { return nil }
+        guard let previewVC = storyboard?.instantiateViewControllerWithIdentifier("PreviewVC") as? PreviewViewController
+            else { return nil }
         
         previewVC.selectedItem = data[indexPath.row]
         

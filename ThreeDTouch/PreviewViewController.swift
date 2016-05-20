@@ -21,8 +21,9 @@ class PreviewViewController: UIViewController {
         return [item1, item2]
     }
     
-    
+    // Preview Label - Outlet
     @IBOutlet weak var previewLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
