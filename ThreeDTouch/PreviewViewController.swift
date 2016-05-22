@@ -11,11 +11,11 @@ class PreviewViewController: UIViewController {
     var previewActions:[UIPreviewActionItem] {
         
         let item1 = UIPreviewAction(title: "Take Action", style: .Default) { (action:UIPreviewAction, UIViewController) -> Void in
-            print("Awesome")
+            print("Select")
         }
         
         let item2 = UIPreviewAction(title: "Take Another Action", style: .Default) { (UIPreviewAction, UIViewController) -> Void in
-            print("Nice")
+            print("Delete")
         }
         
         return [item1, item2]
