@@ -22,7 +22,7 @@ extension MasterViewController: UIViewControllerPreviewingDelegate {
         previewVC.selectedItem = data[indexPath.row]
         
         // Prepare POP
-        quickActionString = values[indexPath.row]
+        quickActionString = data[indexPath.row] + values[indexPath.row]
         
         previewVC.preferredContentSize = CGSize(width: 0, height: 320)
         previewingContext.sourceRect = cell.frame
