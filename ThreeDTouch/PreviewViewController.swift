@@ -11,14 +11,18 @@ class PreviewViewController: UIViewController {
     var previewActions:[UIPreviewActionItem] {
         
         let item1 = UIPreviewAction(title: "Share", style: .Default) { (action:UIPreviewAction, UIViewController) -> Void in
-            print("Select")
+            print("Share!")
         }
         
         let item2 = UIPreviewAction(title: "Save", style: .Default) { (UIPreviewAction, UIViewController) -> Void in
-            print("Delete")
+            print("Save!")
         }
         
-        return [item1, item2]
+        let item3 = UIPreviewAction(title: "Delete", style: .Default) { (UIPreviewAction, UIViewController) -> Void in
+            print("Delete!")
+        }
+        
+        return [item1, item2, item3]
     }
     
     // Preview Label - Outlet
